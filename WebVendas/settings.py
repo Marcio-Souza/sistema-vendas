@@ -39,6 +39,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cadastro',
     'cadastro.usuarios',
+    'cadastro.clientes',
+    'cadastro.colaboradores',
+    'cadastro.empresas',
+    'cadastro.fornecedores',
+    'faturamento',
+    'faturamento.vendas',
+    'faturamento.compras',
+    'estoque',
+    'estoque.produtos',
+    'financeiro',
+    'financeiro.contas_pagar',
+    'financeiro.contas_receber',
+    'financeiro.pagamentos',
+    'financeiro.recebimentos',
 ]
 
 MIDDLEWARE = [
