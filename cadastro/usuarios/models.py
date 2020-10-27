@@ -96,7 +96,6 @@ class Permissoes(models.Model):
     def __str__(self):
         return str(self.id) + '-' + str(self.descricao) + ' - ' + self.empresa.razao_social
 
-
 class Usuarios(models.Model):
     id = models.AutoField(primary_key=True)
     usuario = models.OneToOneField(User, blank=True, null=True, on_delete=models.DO_NOTHING)
