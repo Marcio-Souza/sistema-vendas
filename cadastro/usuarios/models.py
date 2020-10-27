@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+from cadastro.empresas.models import Empresas
+
 
 class Permissoes(models.Model):
     id = models.AutoField(primary_key=True)
@@ -95,6 +97,7 @@ class Permissoes(models.Model):
 
     def __str__(self):
         return str(self.id) + '-' + str(self.descricao) + ' - ' + self.empresa.razao_social
+
 
 class Usuarios(models.Model):
     id = models.AutoField(primary_key=True)
