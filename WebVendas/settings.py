@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'financeiro.contas_receber',
     'financeiro.pagamentos',
     'financeiro.recebimentos',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -70,7 +71,7 @@ ROOT_URLCONF = 'WebVendas.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
