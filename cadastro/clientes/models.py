@@ -54,7 +54,7 @@ class Clientes(models.Model):
 
     def __str__(self):
         return '000' + str(self.id) + ' - ' + self.nome_razao_social
-
+     
     class Meta:
         db_table = 'clientes'
         ordering = ('nome_razao_social',)
