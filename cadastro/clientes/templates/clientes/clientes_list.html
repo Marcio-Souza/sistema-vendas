@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<h1>Listagem de clientes</h1>
+<ul>
+    {% for clientes in object_list %}
+    <li> {{ clientes.nome_razao_social }}</li>
+    {% endfor %}
+</ul>
+
+<br><br>
+<a href="{% url 'pdf_reportlab' %}">Gerar pdf</a>
+<a href="{% url 'pdf_clientes' %}">Gerar pdf Clientes</a>
+{% endblock %}

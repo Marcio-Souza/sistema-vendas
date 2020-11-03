@@ -53,8 +53,8 @@ class Clientes(models.Model):
     data_alteracao = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return '000' + self.id + ' - ' + self.nome_razao_social
-
+        return '000' + str(self.id) + ' - ' + self.nome_razao_social
+     
     class Meta:
         db_table = 'clientes'
         ordering = ('nome_razao_social',)
